@@ -1,0 +1,47 @@
+name: costos
+description: "A new Flutter project."
+publish_to: 'none'  # Evita publicar accidentalmente en pub.dev
+
+version: 1.0.0+1  # Versión de la aplicación
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"  # Asegúrate de usar una versión compatible del SDK de Dart
+
+dependencies:
+  flutter:
+    sdk: flutter  # Dependencia principal de Flutter
+
+  # Dependencias adicionales
+  shared_preferences: ^2.2.2  # Para almacenamiento local
+  path_provider: ^2.0.15  # Para manejo de rutas de archivos
+  intl: ^0.18.1  # Para internacionalización y formato de fechas/números
+  syncfusion_flutter_xlsio: ^28.2.6  # Para manejo de archivos Excel
+  file_picker: ^9.0.0  # Para seleccionar archivos
+  open_file: ^3.2.1  # Para abrir archivos
+  csv: ^6.0.0  # Para manejo de archivos CSV
+  dio: ^5.8.0+1  # Para solicitudes HTTP
+  dio_web_adapter: ^2.1.0  # Adaptador de Dio para web
+  file_saver: ^0.2.14  # Para guardar archivos
+  cross_file: ^0.3.3  # Para manejo de archivos multiplataforma
+  sqflite: ^2.4.2  # Para bases de datos SQLite
+  path: ^1.9.1  # Para manejo de rutas de archivos
+  cupertino_icons: ^1.0.8  # Iconos de Cupertino (iOS)
+  share_plus: ^7.0.0  # Para compartir archivos
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter  # Dependencia para pruebas
+  flutter_launcher_icons: ^0.14.3  # Para generar íconos de la aplicación
+  flutter_lints: ^5.0.0  # Para análisis estático del código
+  csv: ^6.0.0
+
+flutter:
+  uses-material-design: true  # Habilita el uso de Material Design
+  assets:
+    - assets/images/icono.png  # Ruta del ícono de la aplicación
+
+flutter_icons:
+  android: true  # Genera íconos para Android
+  ios: true  # Genera íconos para iOS
+  image_path: "assets/images/icono.png"  # Ruta de la imagen del ícono
+  adaptive_icon_background: "#ffffff"  # Fondo del ícono adaptativo
